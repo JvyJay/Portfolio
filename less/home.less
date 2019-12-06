@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    .special {
+        color: @font-secondary;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: @font-primary;
+        font-weight: bolder;
+        line-height: 1.5;
+
+        @media @tablet {
+            width: 70%;
+        }
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        color: @font-secondary;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: @font-primary;
+        width: 40%;
+        line-height: 1.5;
+        font-weight: lighter;
+        margin-bottom: 15px;
+
+        @media @tablet {
+            width: 70%;
+        }
+    }
+
+    .icons {
+        i {
+            margin: 0 10px 0 10px;
+            color: @font-primary;
+
+            &:hover {
+                color: @font-secondary;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+}

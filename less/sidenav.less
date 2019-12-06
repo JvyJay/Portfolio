@@ -11,6 +11,7 @@
     justify-content: center;
     text-align: center;
     transition: 0.5s;
+    background-color: #333;
 
     span {
         font-size: 3rem;
@@ -62,5 +63,11 @@
     &:hover {
         color: @font-secondary;
         transition: .5s;
+    }
+}
+
+header {
+    @media @tablet {
+        margin-bottom: 50px;
     }
 }
