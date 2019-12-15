@@ -1,0 +1,122 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media @sm-laptop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: @h1;
+    color: @font-primary;
+    font-weight: bolder;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: @paragraph;
+    color: @font-primary;
+    line-height: 1.5;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    line-break: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    // border: 1px solid #fff;
+    width: 50%;
+
+    @media @sm-laptop {
+      width: 100%;
+    }
+
+    img {
+      margin-bottom: 15px;
+      width: 50%;
+    }
+
+    p {
+      text-align: left;
+      width: 50%;
+
+      @media @sm-laptop {
+        text-align: center;
+      }
+
+      @media @tablet {
+        width: 80%;
+      }
+    }
+  }
+
+  .mySkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // border: 1px solid #fff;
+    width: 40%;
+
+    @media @sm-laptop {
+      width: 80%;
+      margin-bottom: 100px;
+      justify-content: center;
+    }
+
+    .skills-img {
+      width: 10%;
+    }
+
+    .indie-skill {
+      margin-bottom: 50px;
+    }
+
+    .bar-contain {
+      // border: 1px solid blue;
+      width: 100%;
+      margin-top: 10px;
+      .skills {
+        height: 15px;
+        background-color: #fff;
+      }
+
+      .html {
+        width: 80%;
+      }
+
+      .css {
+        width: 80%;
+      }
+
+      .javascript {
+        width: 65%;
+      }
+
+      .photoshop {
+        width: 45%;
+      }
+
+      .adobe-xd {
+        width: 50%;
+      }
+    }
+    .graph {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  }
+}
