@@ -1,14 +1,10 @@
-.container {
+.contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
-
-  @media @tablet {
-    margin: 100px 0 100px 0;
-  }
 
   .special {
     color: @font-secondary;
@@ -23,12 +19,6 @@
     @media @tablet {
       width: 70%;
     }
-  }
-
-  h3 {
-    font-size: @h3;
-    color: @font-secondary;
-    margin-bottom: 10px;
   }
 
   p {
@@ -53,6 +43,17 @@
         color: @font-secondary;
         transition: 0.2s ease-in-out;
       }
+    }
+  }
+
+  .spec-a {
+    text-decoration: none;
+    color: @font-primary;
+
+    &:hover {
+      text-decoration: underline;
+      color: @font-secondary;
+      transition: 0.5s;
     }
   }
 }

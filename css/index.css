@@ -151,6 +151,11 @@ body {
   text-align: center;
   height: 100vh;
 }
+@media (max-width: 700px) {
+  .container {
+    margin: 100px 0 100px 0;
+  }
+}
 .container .special {
   color: #ff7fa1;
 }
@@ -343,19 +348,24 @@ body {
   background-color: #fff;
 }
 .about-container .mySkills .bar-contain .html {
-  width: 80%;
+  width: 0;
+  transition: 1.5s;
 }
 .about-container .mySkills .bar-contain .css {
-  width: 80%;
+  width: 0;
+  transition: 1.8s;
 }
 .about-container .mySkills .bar-contain .javascript {
-  width: 65%;
+  width: 0;
+  transition: 2s;
 }
-.about-container .mySkills .bar-contain .photoshop {
-  width: 45%;
+.about-container .mySkills .bar-contain .react {
+  width: 0;
+  transition: 2.2s;
 }
-.about-container .mySkills .bar-contain .adobe-xd {
-  width: 50%;
+.about-container .mySkills .bar-contain .redux {
+  width: 0;
+  transition: 2.5s;
 }
 .about-container .mySkills .graph {
   display: flex;
@@ -364,4 +374,131 @@ body {
 .about-container .mySkills .graph p {
   width: 100%;
   font-size: 1rem;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  width: 100%;
+}
+.projects-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.projects-container h3 {
+  font-size: 2.5rem;
+  color: #ff7fa1;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.projects-container p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  line-break: 0;
+}
+.projects-container .project-card {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .projects-container .project-card {
+    width: 80%;
+  }
+}
+.projects-container .project-card img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.projects-container .project-card img:hover {
+  filter: grayscale(0);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.projects-container .card-body {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .projects-container .card-body {
+    text-align: center;
+  }
+}
+.projects-container .card-body h3 {
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .projects-container .card-body h3 {
+    text-align: center;
+  }
+}
+.projects-container .card-body .icons i {
+  margin-right: 10px;
+  color: #fff;
+}
+.projects-container .card-body .icons i:hover {
+  color: #ff7fa1;
+  transition: 0.2s ease-in-out;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.contact-container .special {
+  color: #ff7fa1;
+}
+.contact-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .contact-container h1 {
+    width: 70%;
+  }
+}
+.contact-container p {
+  font-size: 1.5rem;
+  color: #fff;
+  width: 40%;
+  line-height: 1.5;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+@media (max-width: 700px) {
+  .contact-container p {
+    width: 70%;
+  }
+}
+.contact-container .icons i {
+  margin: 0 10px 0 10px;
+  color: #fff;
+}
+.contact-container .icons i:hover {
+  color: #ff7fa1;
+  transition: 0.2s ease-in-out;
+}
+.contact-container .spec-a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-container .spec-a:hover {
+  text-decoration: underline;
+  color: #ff7fa1;
+  transition: 0.5s;
 }

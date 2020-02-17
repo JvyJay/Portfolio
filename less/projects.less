@@ -1,0 +1,82 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  width: 100%;
+
+  h1 {
+    font-size: @h1;
+    color: @font-primary;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: @h3;
+    color: @font-secondary;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: @paragraph;
+    color: @font-primary;
+    line-height: 1.5;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    line-break: 0;
+  }
+
+  .project-card {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    @media @tablet {
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card-body {
+    width: 100%;
+
+    @media @tablet {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: left;
+      @media @tablet {
+        text-align: center;
+      }
+    }
+    .icons {
+      i {
+        margin-right: 10px;
+        color: @font-primary;
+
+        &:hover {
+          color: @font-secondary;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
