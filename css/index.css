@@ -273,16 +273,9 @@ body {
 }
 .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 1000px) {
-  .about-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .about-container h1 {
   font-size: 3rem;
@@ -301,11 +294,10 @@ body {
 .about-container .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 50%;
+  width: 70%;
 }
 @media (max-width: 1000px) {
   .about-container .card {
@@ -317,13 +309,8 @@ body {
   width: 50%;
 }
 .about-container .card p {
-  text-align: left;
+  text-align: center;
   width: 50%;
-}
-@media (max-width: 1000px) {
-  .about-container .card p {
-    text-align: center;
-  }
 }
 @media (max-width: 700px) {
   .about-container .card p {
@@ -333,57 +320,27 @@ body {
 .about-container .mySkills {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 40%;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1000px) {
-  .about-container .mySkills {
-    width: 80%;
-    margin-bottom: 100px;
-    justify-content: center;
-  }
 }
-.about-container .mySkills .skills-img {
-  width: 10%;
-}
-.about-container .mySkills .indie-skill {
-  margin-bottom: 50px;
-}
-.about-container .mySkills .bar-contain {
-  width: 100%;
-  margin-top: 10px;
-}
-.about-container .mySkills .bar-contain .skills {
-  height: 15px;
-  background-color: #fff;
-}
-.about-container .mySkills .bar-contain .html {
-  width: 0;
-  transition: 1.5s;
-}
-.about-container .mySkills .bar-contain .css {
-  width: 0;
-  transition: 1.8s;
-}
-.about-container .mySkills .bar-contain .javascript {
-  width: 0;
-  transition: 2s;
-}
-.about-container .mySkills .bar-contain .react {
-  width: 0;
-  transition: 2.2s;
-}
-.about-container .mySkills .bar-contain .redux {
-  width: 0;
-  transition: 2.5s;
-}
-.about-container .mySkills .graph {
+.about-container .mySkills .skills-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.about-container .mySkills .graph p {
-  width: 100%;
-  font-size: 1rem;
+.about-container .mySkills .skills-container .skills-img {
+  width: 5%;
+  margin: 20px;
+}
+@media (max-width: 700px) {
+  .about-container .mySkills .skills-container .skills-img {
+    width: 10%;
+  }
 }
 .projects-container {
   display: flex;

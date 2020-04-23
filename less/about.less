@@ -1,14 +1,8 @@
 .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media @sm-laptop {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   h1 {
     font-size: @h1;
@@ -29,12 +23,11 @@
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
     // border: 1px solid #fff;
-    width: 50%;
+    width: 70%;
 
     @media @sm-laptop {
       width: 100%;
@@ -46,12 +39,8 @@
     }
 
     p {
-      text-align: left;
+      text-align: center;
       width: 50%;
-
-      @media @sm-laptop {
-        text-align: center;
-      }
 
       @media @tablet {
         width: 80%;
@@ -62,65 +51,31 @@
   .mySkills {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     // border: 1px solid #fff;
-    width: 40%;
 
     @media @sm-laptop {
-      width: 80%;
-      margin-bottom: 100px;
-      justify-content: center;
+      // width: 80%;
+      // margin-bottom: 100px;
+      // justify-content: center;
     }
 
-    .skills-img {
-      width: 10%;
-    }
-
-    .indie-skill {
-      margin-bottom: 50px;
-    }
-
-    .bar-contain {
-      // border: 1px solid blue;
-      width: 100%;
-      margin-top: 10px;
-      .skills {
-        height: 15px;
-        background-color: #fff;
-      }
-
-      .html {
-        width: 0;
-        transition: 1.5s;
-      }
-
-      .css {
-        width: 0;
-        transition: 1.8s;
-      }
-
-      .javascript {
-        width: 0;
-        transition: 2s;
-      }
-
-      .react {
-        width: 0;
-        transition: 2.2s;
-      }
-
-      .redux {
-        width: 0;
-        transition: 2.5s;
-      }
-    }
-    .graph {
+    .skills-container {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
 
-      p {
-        width: 100%;
-        font-size: 1rem;
+      .skills-img {
+        width: 5%;
+        margin: 20px;
+
+        @media @tablet {
+          width: 10%;
+        }
       }
     }
   }
