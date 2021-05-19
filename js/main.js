@@ -17,16 +17,8 @@ close.addEventListener('click', () => {
   open.style.width = '0';
 });
 
-// PROJECT SLIDER BARS
-const htmlBar = document.querySelector('.html');
-const cssBar = document.querySelector('.css');
-const jsBar = document.querySelector('.javascript');
-const reactBar = document.querySelector('.react');
-const reduxBar = document.querySelector('.redux');
-window.addEventListener('load', () => {
-  htmlBar.style.width = '80%';
-  cssBar.style.width = '80%';
-  jsBar.style.width = '70%';
-  reactBar.style.width = '65%';
-  reduxBar.style.width = '40%';
+
+// FADE IN
+window.addEventListener('DOMContentLoaded', function () {
+  document.body.className = 'visible';
 });

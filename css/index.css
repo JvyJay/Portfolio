@@ -126,7 +126,7 @@ table {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Sulphur Point Regular'), local('SulphurPoint-Regular'), url(https://fonts.gstatic.com/s/sulphurpoint/v1/RLp5K5vv8KaycDcazWFPBj2adf4Yvw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/sulphurpoint/v4/RLp5K5vv8KaycDcazWFPBj2adf4Yvw.ttf) format('truetype');
 }
 h1,
 h2,
@@ -157,6 +157,13 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #444;
   border-radius: 5px;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease-out;
 }
 .container {
   display: flex;
